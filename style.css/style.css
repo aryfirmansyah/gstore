@@ -1,0 +1,199 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: "Rubik", sans-serif;
+}
+
+nav {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgb(19, 25, 33);
+   width: 100vw;
+   height: 100%;
+   color: white;
+}
+
+.mainMenu {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding: 0 30px 0 0;
+   gap: 30px;
+}
+
+.mainMenu li {
+   list-style: none;
+}
+
+.mainMenu li a {
+   text-decoration: none;
+}
+
+.mainMenu li a:hover {
+   transition: 0.5s;
+}
+
+/* logo */
+
+.logo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 5px 0 5px 0;
+   cursor: pointer;
+   justify-content: center;
+   height: 50px;
+   padding: 0 0 0 30px;
+}
+
+.logo a {
+   color: white;
+   text-decoration: none;
+}
+
+.logo .first {
+   font-size: 1.2rem;
+}
+
+.logo .second {
+   font-size: 0.7rem;
+   font-weight: 300;
+   color: #ff9900;
+}
+
+/* logo end */
+
+nav .openMenu {
+   font-size: 1rem;
+   margin: 20px;
+   display: none;
+   cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+   font-size: 2rem;
+   display: none;
+   cursor: pointer;
+}
+
+/* profile */
+
+.profile a {
+   color: white;
+}
+
+.profile a:hover {
+   color: #ff9900;
+   transition: 0.5s;
+}
+
+/* profile end */
+
+/* product */
+
+.dropbtn {
+   background-color: transparent;
+   color: white;
+   border: none;
+   font-size: 1rem;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropdownContent {
+   display: none;
+   position: absolute;
+   background-color: rgb(28, 38, 50);
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+}
+
+.dropdownContent a {
+   color: white;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdownContent a:hover {
+   background-color: #ff9900;
+   transition: 0.5s;
+   color: white;
+}
+
+.dropdown:hover .dropdownContent {
+   display: block;
+}
+
+.dropdown:hover .dropbtn {
+   background-color: #ff9900;
+}
+/* product end */
+
+/* visit */
+
+.visit a {
+   color: white;
+}
+
+.visit a:hover {
+   color: #ff9900;
+}
+
+/* visit end */
+
+@media (max-width: 574px) {
+   nav .mainMenu {
+      height: 30vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 0.5s ease 0s;
+      display: none;
+   }
+
+   nav .mainMenu {
+      gap: 20px;
+   }
+   nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+   }
+   nav .openMenu {
+      display: block;
+      margin-right: 20px;
+   }
+
+   nav .mainMenu li a:hover,
+   nav .profile li a:hover,
+   .profile li a:hover {
+      background: none;
+      color: rgb(255, 123, 0);
+   }
+   nav {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   nav .logo {
+      margin-left: 20px;
+      padding: 0;
+   }
+}
