@@ -5,7 +5,10 @@
 
 body {
    font-family: "Rubik", sans-serif;
+   background-color: rgb(19, 25, 33);
 }
+
+/* navbar */
 
 nav {
    display: flex;
@@ -13,8 +16,8 @@ nav {
    align-items: center;
    justify-content: space-between;
    background-color: rgb(19, 25, 33);
-   width: 100vw;
-   height: 100%;
+   width: 100%;
+   height: 60px;
    color: white;
 }
 
@@ -101,6 +104,7 @@ nav .mainMenu .closeMenu,
    color: white;
    border: none;
    font-size: 1rem;
+   cursor: pointer;
 }
 
 .dropdown {
@@ -125,9 +129,8 @@ nav .mainMenu .closeMenu,
 }
 
 .dropdownContent a:hover {
-   background-color: #ff9900;
    transition: 0.5s;
-   color: white;
+   color: #ff9900;
 }
 
 .dropdown:hover .dropdownContent {
@@ -150,6 +153,63 @@ nav .mainMenu .closeMenu,
 }
 
 /* visit end */
+
+/* navbat end */
+
+/* section */
+
+.hero {
+   min-height: 50vh;
+   display: flex;
+   align-items: center;
+   background-image: url(../asset/poster\ 2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   margin: 0 0 0 20px;
+   color: white;
+}
+
+.content h1 span {
+   color: #ff9900;
+}
+/* section end */
+
+/* product */
+.productTag {
+   display: flex;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+   margin-bottom: 130px;
+   text-transform: uppercase;
+   background-color: rgb(19, 25, 33);
+}
+
+.productItem {
+   background-color: white;
+   height: 600px;
+   border-radius: 150px 150px 0 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.productItem .poster {
+   margin-top: -60px;
+   margin-bottom: auto;
+}
+
+.productItem .sticker {
+   margin-top: -60px;
+   margin-bottom: auto;
+}
+/* prosuct end */
 
 @media (max-width: 574px) {
    nav .mainMenu {
@@ -175,6 +235,7 @@ nav .mainMenu .closeMenu,
       position: absolute;
       top: 20px;
       right: 20px;
+      font-size: 1.5rem;
    }
    nav .openMenu {
       display: block;
